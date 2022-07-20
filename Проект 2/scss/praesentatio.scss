@@ -1,0 +1,23 @@
+.praesentatio-phone {
+	height: 877px;
+
+	.box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 274px;
+		margin-left: 324px;
+		margin-top: 80px;
+
+		.praesentatio-phone__card {
+			width: 306px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			height: 258px;
+		}
+
+	}
+
+}

@@ -1,0 +1,140 @@
+.ready {
+	height: 919px;
+
+	.boxx {
+		@include flexs-column;
+
+	}
+
+	.ready-top {
+		display: block;
+		z-index: 1;
+		background-image: url('../img/ready-top.jpeg');
+		width: 100%;
+		max-width: 1440px;
+		height: 474px;
+
+		.box {
+			margin-top: 160px;
+
+			@include flexs-column;
+
+			.ready-top__title {
+				font-size: 38px;
+				line-height: 48px;
+				text-align: center;
+				color: $col__h;
+
+
+			}
+
+			.ready-top__btns {
+				@include flexs-row;
+				margin-top: 30px;
+				width: 400px;
+
+				.ready-top__btn-dow {
+					font-family: 'Gothic A1';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 26px;
+					/* identical to box height, or 162% */
+					text-align: center;
+					height: 66px;
+					width: 190px;
+					color: $col__h;
+				}
+
+				.ready-top__btn-get {
+					height: 66px;
+					width: 190px;
+					font-family: 'Gothic A1';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 26px;
+					text-align: center;
+					color: $col__h;
+					background-color: $col_f;
+					z-index: 1;
+					cursor: pointer;
+
+					&:hover {
+						background: $col_b;
+					}
+				}
+			}
+
+
+		}
+
+
+	}
+
+	.ready-content {
+		display: block;
+		z-index: 31;
+		background-image: url('../img/ready-content.jpeg');
+		width: 100%;
+		max-width: 1440px;
+		height: 463px;
+
+		.box {
+			@include flexs-column;
+			margin-top: 129px;
+
+			.ready-content__title {
+				font-size: 38px;
+				line-height: 48px;
+				text-align: center;
+				color: $col__h ;
+			}
+
+			.ready-content__text {
+				font-family: 'Gothic A1';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 30px;
+				text-align: center;
+				color: $col_lead;
+				margin-top: 20px;
+			}
+
+			.ready-content__send {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-top: 40px;
+
+				.ready-content__input {
+					height: 70px;
+					width: 311px;
+					color: $col_b;
+
+					&:hover {
+						background: darken($color: $col__h, $amount: 20);
+					}
+
+				}
+
+				.ready-content__button {
+					height: 70px;
+					width: 154px;
+					font-family: 'Gothic A1';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 26px;
+					/* identical to box height, or 162% */
+					color: $col__h;
+					text-align: center;
+
+				}
+
+			}
+		}
+
+	}
+}

@@ -1,0 +1,53 @@
+.ipad {
+	display: block;
+	height: 957px;
+	width: 100%;
+	background-image: url("../img/bg.jpeg");
+	border-radius: 0px;
+	z-index: -1;
+
+
+	&__items {
+		width: 700px;
+		height: 221px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 80px;
+
+	}
+
+	&__text {
+
+		width: 228px;
+		height: 20px;
+		@include font;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: $col_txt;
+	}
+
+	.box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	&__title {
+		font-size: 38px;
+		line-height: 48px;
+		text-align: center;
+		width: 607px;
+		height: 96px;
+		margin-top: 30px;
+
+	}
+
+
+}

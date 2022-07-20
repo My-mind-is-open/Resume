@@ -1,0 +1,138 @@
+@mixin font {
+	font-family: 'Gothic A1';
+	font-style: normal;
+	font-weight: 400;
+	color: $col__h;
+}
+
+@mixin subtitle {
+	font-family: 'Gothic A1';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	color: $col_txt;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+@mixin praesentatio-title {
+	margin-top: 30px;
+	color: $col_b;
+	font-family: 'Gothic A1';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 38px;
+	line-height: 48px;
+}
+
+@mixin lead {
+	margin-top: 22px;
+	font-family: 'Gothic A1';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	color: $col_lead;
+
+}
+
+@mixin boxs {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 302px;
+	margin-right: 302px;
+	flex-direction: row;
+}
+
+@mixin desk-title {
+	font-family: 'Gothic A1';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	/* identical to box height, or 133% */
+
+	text-align: center;
+
+	color: $col_b;
+}
+
+@mixin desk-tagline {
+	font-family: 'Gothic A1';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	width: 371px;
+	height: 90px;
+
+	text-align: center;
+
+	color: $col_lead;
+}
+
+@mixin number-digit {
+	width: 129px;
+	height: 90px;
+
+	margin-top: 163px;
+	font-family: 'Gothic A1';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 59px;
+	line-height: 90px;
+	/* identical to box height, or 153% */
+
+	text-align: center;
+
+	color: $col__numbrr;
+}
+
+@mixin number-text {
+	width: 193px;
+	height: 24px;
+
+	font-family: 'Gothic A1';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	/* identical to box height, or 133% */
+	margin-top: 10px;
+	text-align: center;
+
+	color: $col_b;
+}
+
+@mixin quote__desc {
+	width: 700px;
+	height: 200px;
+	left: calc(50% - 700px/2);
+	top: 116.76px;
+
+	font-family: 'Gothic A1';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 40px;
+
+	margin-top: 65px;
+	text-align: center;
+
+	color: $col_lead;
+}
+
+@mixin flexs-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@mixin flexs-row {
+	display: flex;
+
+	align-items: center;
+	justify-content: space-around;
+}

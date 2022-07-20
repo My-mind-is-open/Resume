@@ -1,0 +1,35 @@
+.advantage {
+	height: 340px;
+
+
+	.container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+
+
+	}
+
+}
+
+.advantage__img {
+	margin-top: 159px;
+}
+
+.desk-title {
+	@include desk-title;
+	margin-top: 40px;
+}
+
+.desk-tagline {
+	@include desk-tagline;
+	margin-top: 17px;
+}
+
+.advantage__card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}

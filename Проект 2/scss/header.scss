@@ -1,0 +1,101 @@
+.header {
+	display: block;
+	width: 100%;
+	max-width: 1440px;
+	height: 800px;
+	z-index: -1;
+	background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+	border-radius: 0px;
+
+	.header__top-flex {
+		margin-left: 144px;
+		margin-right: 159px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		height: 100px;
+
+		.header__menu-list {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-direction: row;
+
+			.header__item {
+				list-style-type: none;
+				margin: 15px;
+
+				.header__link {
+					font-family: 'Gothic A1';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 15px;
+					line-height: 20px;
+					color: $col__h;
+					text-decoration: none;
+
+				}
+
+				.header__link {
+					&:hover {
+						color: $col_link;
+					}
+				}
+			}
+
+		}
+
+	}
+
+	.header__content {
+		display: flex;
+		justify-content: space-between;
+
+		height: 700px;
+		margin-left: 144px;
+		align-items: center;
+		margin-right: 44px;
+
+		.header__content-title {
+			font-size: 80px;
+			line-height: 80px;
+
+
+		}
+
+
+
+		.header__content-text {
+			@include font;
+			font-size: 30px;
+			line-height: 44px;
+
+			margin-top: 15px;
+		}
+
+
+
+		.header__btn {
+			width: 170px;
+			height: 66px;
+			@include font;
+			font-size: 16px;
+			line-height: 26px;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			margin-top: 25px;
+		}
+
+
+
+		.header__content-img {
+			display: block;
+			height: 680px;
+			width: 652px;
+			border-radius: 0px;
+		}
+	}
+
+}

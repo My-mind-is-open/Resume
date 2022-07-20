@@ -1,0 +1,24 @@
+.numbers {
+	height: 333px;
+
+	.box {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		.numbers-count {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.number-digit {
+				@include number-digit;
+			}
+
+			.number-text {
+				@include number-text;
+			}
+		}
+
+	}
+}

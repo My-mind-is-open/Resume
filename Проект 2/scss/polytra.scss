@@ -1,0 +1,14 @@
+.polytra {
+	height: 671px;
+
+
+	.box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.polytra__phones {
+			margin-top: 118px;
+		}
+	}
+}
