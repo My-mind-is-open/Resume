@@ -1,0 +1,70 @@
+@import 'variables';
+@import 'mixin';
+
+.puzzle {
+	display: block;
+	width: 100%;
+	height: 600px;
+	background-image: url('../img/volcano.png');
+	align-items: flex-end;
+	justify-content: center;
+
+	.box {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		height: 100%;
+		flex-direction: column;
+
+		.puzzle__direction {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			width: 298px;
+			margin-top: 260px;
+			margin-right: 62px;
+
+
+			.puzzle__title {
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+
+				color: $col_w;
+			}
+
+			.puzzle__subtitle {
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				color: $col_g;
+				height: 60px;
+				width: 298px;
+				border-radius: nullpx;
+
+			}
+		}
+	}
+}
+
+.puzzle__icons {
+	@include flex-row-space-around;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 20px;
+	margin-top: 204px;
+	margin-right: 40px;
+}
+
+.puzzle__icon {
+	margin-right: 16px;
+}

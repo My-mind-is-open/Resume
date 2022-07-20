@@ -1,0 +1,76 @@
+@import 'variables';
+@import 'mixin';
+
+.what-do {
+	height: 1716px;
+	width: 100%;
+	background: #000000;
+	border-radius: 0px;
+
+	.box {
+		@include flex-column;
+
+
+		.what-do__lead {
+			@include flex-column;
+			margin-top: 158px;
+
+			.wgat-do__text {
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 23px;
+				line-height: 30px;
+				text-align: center;
+				color: $col_g;
+			}
+		}
+	}
+}
+
+.product__title {
+	@include product-title;
+}
+
+.product__text {
+	@include product__text;
+	margin-top: 10px;
+}
+
+
+
+.product-product-img--phone {
+	background-image: url('../img/roduct-img.jpg');
+	transition: 1s;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.product-product-img--build {
+	background-image: url('../img/build.png');
+	transition: 1s;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.product-product-img--forest {
+	background-image: url('../img/foorest.png');
+	transition: 1s;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.product-product-img--moose {
+	background-image: url('../img/moose.png');
+	transition: 1s;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}

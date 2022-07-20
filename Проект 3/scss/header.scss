@@ -1,0 +1,40 @@
+@import 'variables';
+@import 'mixin';
+
+.header {
+	height: 90px;
+	background: $col_b;
+
+	.box {
+		@include flex-row-space-bet;
+		height: 90px;
+		margin-left: 152px;
+		margin-right: 160px;
+
+
+
+		.header__menu-list {
+			@include flex-row-space-bet;
+
+			.header__item {
+				list-style: none;
+
+				.header__link {
+					text-decoration: none;
+					margin-left: 32px;
+					font-family: 'Poppins';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 15px;
+					line-height: 20px;
+
+					color: $col_w;
+
+					&:hover {
+						color: $col_link;
+					}
+				}
+			}
+		}
+	}
+}

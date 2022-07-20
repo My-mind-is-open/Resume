@@ -1,0 +1,98 @@
+@mixin flex-row-space-around {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+
+}
+
+@mixin flex-row-space-bet {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@mixin btn {
+	width: 155px;
+	height: 42px;
+	background: $col_w;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.4px;
+
+	color: $col_b;
+}
+
+@mixin subtitle {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	color: $col_g;
+}
+
+@mixin title {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 54px;
+	line-height: 59px;
+	/* identical to box height, or 110% */
+
+	text-align: center;
+
+	color: $col_w;
+
+}
+
+@mixin text {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	border-radius: nullpx;
+	text-align: center;
+	color: $col_g;
+	display: block;
+}
+
+@mixin product-title {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	color: $col_w;
+}
+
+@mixin product__text {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	width: 501px;
+	color: $col_g;
+}

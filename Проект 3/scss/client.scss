@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'mixin';
+
+.client {
+	display: block;
+	height: 500px;
+	width: 100%;
+	max-width: 1440px;
+	background: $col_b;
+
+	.box {
+		padding-top: 113px;
+		@include flex-column;
+	}
+
+	&__about {
+		@include flex-column;
+
+		.client__title.element-show {
+
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 40px;
+			line-height: 42px;
+			text-align: center;
+			color: $col_w;
+			opacity: 0;
+			transform: translate(300px, 0px);
+			opacity: 0;
+			transition: all 1.2s ease 0s;
+		}
+
+
+
+		.client__text {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 30px;
+			text-align: center;
+			color: $col_g;
+
+		}
+	}
+
+	.clietn__company {
+		margin-top: 111px;
+		@include flex-row-space-around;
+		width: 100%;
+	}
+}
+
+.client__title.element-show.element-active {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}

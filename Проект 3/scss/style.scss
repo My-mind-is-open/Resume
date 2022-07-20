@@ -1,0 +1,112 @@
+@import 'header';
+@import 'variables';
+@import 'aperture';
+@import 'mixin';
+@import 'what_we_do';
+@import 'puzzle';
+@import 'tools';
+@import 'client';
+@import 'help';
+@import 'footer';
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+
+}
+
+.wrapper {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.btn {
+	@include btn;
+
+	&:hover {
+		background: $col_btn;
+	}
+}
+
+.product-btn {
+	@include btn;
+	margin-top: 26px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 2px;
+
+	&:hover {
+		background: $col_btn;
+	}
+
+	span {
+		margin-left: 10px;
+	}
+}
+
+.subtitle {
+	@include subtitle;
+}
+
+.title {
+	@include title;
+}
+
+
+.title.element-show {
+	@include title;
+	transform: translate(-300px, 0px);
+	opacity: 0;
+	transition: all 1.2s ease 0s;
+}
+
+.title.element-show.element-active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.text {
+	@include text;
+	height: 80px;
+	width: 580px;
+	margin-top: 18px;
+}
+
+.grid {
+	display: grid;
+	gap: 16px 16px;
+	grid-template-columns: 1fr 1fr;
+	padding: 136px;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	width: 575px;
+	height: 600px;
+	padding: 30px;
+
+}
+
+.puzzle-bg-img-mountains {
+	background-image: url('../img/mountains.jpg');
+}
+
+.logo {
+	display: block;
+	width: 128px;
+	height: 31px;
+	background-image: url('../img/logo.png');
+}

@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'mixin';
+
+.help {
+	max-width: 1440px;
+	display: block;
+	width: 100%;
+	height: 414px;
+	background: $col_b;
+
+	.box {
+		padding: 113px;
+		@include flex-column;
+
+
+
+		.help__subtitle {
+			margin-top: 15px;
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 30px;
+			text-align: center;
+			color: $col_g;
+		}
+	}
+}
+
+.help__title.element-show {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 42px;
+	width: 571px;
+	text-align: center;
+	color: $col_w;
+	transform: translate(-300px, 0px);
+	opacity: 0;
+	transition: all 1.2s ease 0s;
+}
+
+.help__title.element-show.element-active {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
