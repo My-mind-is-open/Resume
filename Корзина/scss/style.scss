@@ -1,0 +1,31 @@
+@import 'Variables';
+@import '../components/Header/Header.scss';
+@import '../components/Products/Products.scss';
+@import '../components/Shopping/Shopping.scss';
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	line-height: 1.7;
+	background-color: $bg_color;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: $color-scroll;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: $color-white;
+}

@@ -1,0 +1,37 @@
+.shopping-element__name {
+	padding: $spacing-middle;
+	font-weight: 500;
+
+}
+
+.shopping-element__price {
+	padding: $spacing-middle;
+	color: $color-black;
+	font-weight: 700;
+}
+
+.shopping-container {
+	width: 97%;
+	position: fixed;
+	height: 97vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	padding: $spacing-large;
+	background-color: $color-white;
+	box-shadow: $shadow;
+}
+
+.shopping-close {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 20px;
+	right: 20px;
+	background-image: url('../img/close.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	cursor: pointer;
+}
