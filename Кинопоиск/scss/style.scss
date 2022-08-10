@@ -1,0 +1,41 @@
+@import 'Variables';
+@import 'Film-reel';
+@import 'Header';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	background: $color-b;
+	font-family: "Open Sans", sans-serif;
+
+}
+
+.main-box {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 1;
+
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.movie__average--green {
+	border: 1.5px solid $color-average-h;
+}
+
+.movie__average--orange {
+	border: 1.5px solid $color-average-a;
+}
+
+.movie__average--red {
+	boreder: 1.5px solid $color-average-l;
+}

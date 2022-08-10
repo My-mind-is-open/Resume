@@ -1,0 +1,77 @@
+@import 'Variables';
+
+.film-reel {
+	.container {
+		.movies {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+			.movie {
+				width: 240px;
+
+				margin: 10px;
+				position: relative;
+
+				.movie__cover-inner {
+					position: relative;
+					height: 360px;
+
+					.movie__cover-dark {
+						background: $color-deep-b;
+						opacity: 0.2;
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						max-width: 100%;
+						height: 100%;
+						z-index: 1;
+
+						&:hover {
+							background-color: $color-hover;
+							cursor: pointer;
+
+						}
+
+					}
+
+					.movie__img {
+						height: 100%;
+						width: 240px;
+					}
+				}
+
+				.movie__info {
+					padding: 10px 0px;
+
+					.movie__title {
+						font-size: 16px;
+						color: $color-logo;
+					}
+
+					.movie__category {
+						font-size: 14px;
+						color: $color-color-o;
+					}
+
+					.movie__average {
+						position: absolute;
+						top: 10px;
+						left: 10px;
+						color: white;
+						;
+						border-radius: 50%;
+						height: 36px;
+						width: 36px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						background: $color-bg;
+						font-size: 14px
+					}
+				}
+			}
+		}
+	}
+}
