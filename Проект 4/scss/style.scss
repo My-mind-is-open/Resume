@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import 'Variables';
+@import 'Header';
+@import 'Mixin';
+@import 'main-content';
+@import 'advantages';
+@import 'examples';
+@import 'Description';
+@import 'Special';
+@import 'Advertisement';
+@import 'Artist';
+@import 'Create';
+@import 'Footer';
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	background: $col_b;
+}
+
+.wrapper {
+	max-width: 1600px;
+	width: 100%;
+	margin: 0px auto;
+	z-index: -3;
+
+
+}
+
+.btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 30px;
+	gap: 10px;
+	width: 160px;
+	height: 56px;
+	background: linear-gradient(97.62deg, #EB11AA -15.99%, #2E81E2 104.3%);
+	border-radius: 2px;
+	cursor: pointer;
+	color: $col__h;
+
+	&:hover {
+		background: linear-gradient(to bottom, #b721ff, #2af598, #fec051, #fee140, #fa709a);
+		color: $col_b;
+	}
+}
+
+.NFT {
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(180deg, rgb(11, 236, 223) 24%, rgb(10, 209, 124) 92%);
+}
+
+.high-text {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 133.3%;
+	color: $col__h;
+}
+
+.middle-text {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 31px;
+	line-height: 140%;
+
+	color: $col__h;
+}
+
+.down-text {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 133.3%;
+
+	color: $col__h;
+	opacity: 0.5;
+}
+
+.title {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 49px;
+	line-height: 120%;
+	color: $col__h;
+
+}
+
+.subtitle {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 160%;
+	text-align: center;
+
+	color: $col__h;
+
+}
+
+.text {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: $col__h;
+	opacity: 0.7;
+
+}
+
+.description__text-center {
+	width: 284px;
+	height: 75px;
+	text-align: center;
+	margin-top: 15px;
+}

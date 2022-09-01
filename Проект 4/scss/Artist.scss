@@ -1,0 +1,103 @@
+@import 'Variables';
+@import 'Mixin';
+
+.artist {
+	height: 603px;
+	width: 100%;
+
+	.box {
+		height: 100%;
+		@include column;
+
+
+
+		margin-left: 171px;
+		margin-right: 186px;
+		margin-top: 160px;
+		align-items: center;
+
+		.artist__cards {
+			margin-top: 60px;
+			width: 100%;
+			height: 100%;
+
+			@include space-bet;
+
+			.artist__card {
+				position: relative;
+				width: 344px;
+				height: 484px;
+				background: rgba(46, 47, 64, 0.3);
+				backdrop-filter: blur(4px);
+				/* Note: backdrop-filter has minimal browser support */
+
+				border-radius: 2px;
+				padding: 30px 30px;
+
+				.holder {
+
+					@include column;
+					align-items: center;
+
+					.artist__person {
+						top: 135px;
+						position: absolute;
+						width: 93.82px;
+						height: 93px;
+						background-image: url('../img/person.png');
+					}
+
+					.artist__person2 {
+						top: 135px;
+						position: absolute;
+						width: 93.82px;
+						height: 93px;
+						background-image: url('../img/person2.png');
+					}
+
+					.artist__person3 {
+						top: 135px;
+						position: absolute;
+						width: 93.82px;
+						height: 93px;
+						background-image: url('../img/person3.png');
+					}
+
+					.artist__subtitle {
+						margin-top: 61px;
+					}
+
+					.artist__text {
+						margin-top: 15px;
+						text-align: center;
+					}
+
+					.artist__btn {
+						margin-top: 25px;
+					}
+
+					.artist__img {
+						background-image: url('../img/abstr.png');
+						width: 284px;
+						height: 157px;
+					}
+
+					.artist__img2 {
+						background-image: url('../img/abstr2.png');
+						width: 284px;
+						height: 157px;
+					}
+
+					.artist__img3 {
+						background-image: url('../img/abstr3.png');
+						width: 284px;
+						height: 157px;
+					}
+				}
+			}
+
+		}
+
+
+	}
+}

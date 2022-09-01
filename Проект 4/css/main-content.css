@@ -1,0 +1,26 @@
+.main-content {
+  width: 100%;
+  height: 815px;
+}
+.main-content .boxxx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 261px;
+  margin-right: 186px;
+  background: green;
+}
+.main-content .boxxx .main-content__left {
+  background: yellow;
+}
+.main-content .boxxx .main-content__right {
+  width: 574px;
+  height: 710px;
+  background-color: red;
+}

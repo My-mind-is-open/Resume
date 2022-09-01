@@ -1,0 +1,36 @@
+@import 'Variables';
+@import 'Mixin';
+
+.footer {
+	height: 106px;
+	width: 100%;
+	background: linear-gradient(89.96deg, rgba(203, 71, 160, 0.5) 0.02%, rgba(105, 71, 203, 0.5) 49.47%, rgba(0, 255, 133, 0.5) 99.97%);
+
+	.box {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 100%;
+
+		margin-left: 522px;
+		margin-right: 522px;
+
+		.footer__link {
+			font-family: 'Oswald';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 160%;
+			/* identical to box height, or 26px */
+
+			text-align: center;
+
+			color: $col__h;
+			cursor: pointer;
+
+			&:hover {
+				color: $col_f;
+			}
+		}
+	}
+}

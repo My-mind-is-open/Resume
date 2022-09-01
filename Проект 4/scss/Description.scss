@@ -1,0 +1,138 @@
+@import 'Variables';
+@import 'Mixin';
+
+.description {
+	width: 100%;
+	height: 700px;
+
+
+	.box {
+		@include space-bet;
+		margin-left: 171px;
+		margin-right: 186px;
+
+
+
+		.description__made {
+			width: 332px;
+			height: 338px;
+
+			.wrap {
+				width: 100%;
+				height: 100%;
+				@include column;
+
+				.description__text {
+					margin-top: 25px;
+					width: 305px;
+					height: 104px;
+				}
+
+				.description__btn {
+					margin-top: 35px;
+				}
+			}
+		}
+
+		.description__cards {
+			width: 712px;
+			height: 530px;
+
+
+			.wrapper {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 65px 15px;
+				padding: 10px;
+
+				.description__card {
+					width: 344px;
+					height: 223px;
+					background: rgba(46, 47, 64, 0.3);
+					backdrop-filter: blur(4px);
+
+					position: relative;
+					border-radius: 2px;
+
+					.container {
+						@include column;
+						align-items: center;
+
+						.description__img {
+							background-image: url('../img/box.png');
+							width: 100px;
+							height: 100.03px;
+							display: block;
+							position: absolute;
+							bottom: 180px;
+						}
+
+						.description__img2 {
+							background-image: url('../img/box2.jpeg');
+
+							width: 100px;
+							height: 100.03px;
+							display: block;
+							position: absolute;
+							bottom: 180px;
+						}
+
+						.description__img3 {
+							background-image: url('../img/box3.png');
+
+							width: 100px;
+							height: 100.03px;
+							display: block;
+							position: absolute;
+							bottom: 180px;
+						}
+
+						.description__img4 {
+							background-image: url('../img/box4.png');
+
+							width: 100px;
+							height: 100.03px;
+							display: block;
+							position: absolute;
+							bottom: 180px;
+							background-repeat: no-repeat;
+						}
+
+						.description__dust {
+							width: 172px;
+							height: 57px;
+							background: rgba(7, 88, 241, 0.3);
+							filter: blur(55px);
+							transform: rotate(-180deg);
+						}
+
+						.description__dust2 {
+							width: 176px;
+							height: 57px;
+							background: rgba(204, 204, 204, 0.3);
+							filter: blur(55px);
+							transform: rotate(-180deg);
+						}
+
+						.description__dust3 {
+							width: 164px;
+							height: 57px;
+							background: rgba(202, 71, 160, 0.44);
+							filter: blur(55px);
+							transform: rotate(-180deg);
+						}
+
+						.description__dust4 {
+							width: 164px;
+							height: 57px;
+							background: rgba(61, 0, 255, 0.3);
+							filter: blur(55px);
+							transform: rotate(-180deg)
+						}
+
+					}
+				}
+			}
+		}
+	}
+}
