@@ -1,0 +1,33 @@
+.notification__wrp {
+	position: fixed;
+	bottom: var(--spacing-large);
+	left: var(--spacing-large);
+	display: flex;
+	justify-content: space-between;
+	background-color: greenyellow;
+	border: 1px solid var(--color--black);
+	width: 250px;
+	height: 60px;
+	padding: 10px 10px;
+	align-items: center;
+}
+
+.notification__text {
+	font-size: 17px;
+}
+
+.notification__close {
+
+
+	width: 45px;
+	height: 45px;
+	background-image: url("./close.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-color: transparent;
+	border: none;
+	outline: none;
+
+	cursor: pointer;
+}
