@@ -1,0 +1,47 @@
+.note.new {
+	background-color: cadetblue;
+
+
+
+	.note-footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.save {
+			background-color: #F0FFF0;
+			border: none;
+			border-radius: 15px;
+			padding: 5px 10px 5px 10px;
+			cursor: pointer;
+
+			&:hover {
+				background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%);
+			}
+		}
+
+
+	}
+
+}
+
+.area {
+	border: none;
+	resize: none;
+	background-color: cadetblue;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.note {
+	background-color: #FAEBD7;
+	white-space: pre-wrap;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}

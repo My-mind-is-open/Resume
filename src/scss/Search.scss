@@ -1,0 +1,17 @@
+.search {
+	display: flex;
+	align-items: center;
+	background-color: #A9A9A9;
+	padding: 5px;
+	border-radius: 10px;
+	margin-bottom: 1.5em;
+
+	input {
+		border: none;
+		background-color: #A9A9A9;
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
